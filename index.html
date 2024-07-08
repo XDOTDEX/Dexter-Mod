@@ -1,46 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design #01 | AsmrProg</title>
+</head>
+
 <body>
-<link rel="stylesheet" href="css/style.css">
-  <div class="loader-container">
-    
-  <div class="loader">
-   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256">
-    <defs>
-        <linearGradient id="logosAntDesign0" x1="62.102%" x2="108.197%" y1="0%" y2="37.864%">
-            <stop offset="0%" stop-color="#4285EB"/>
-            <stop offset="100%" stop-color="#2EC7FF"/>
-        </linearGradient>
-        <linearGradient id="logosAntDesign1" x1="69.644%" x2="54.043%" y1="0%" y2="108.457%">
-            <stop offset="0%" stop-color="#29CDFF"/>
-            <stop offset="37.86%" stop-color="#148EFF"/>
-            <stop offset="100%" stop-color="#0A60FF"/>
-        </linearGradient>
-        <linearGradient id="logosAntDesign2" x1="69.691%" x2="16.723%" y1="-12.974%" y2="117.391%">
-            <stop offset="0%" stop-color="#FA816E"/>
-            <stop offset="41.473%" stop-color="#F74A5C"/>
-            <stop offset="100%" stop-color="#F51D2C"/>
-        </linearGradient>
-        <linearGradient id="logosAntDesign3" x1="68.128%" x2="30.44%" y1="-35.691%" y2="114.943%">
-            <stop offset="0%" stop-color="#FA8E7D"/>
-            <stop offset="51.264%" stop-color="#F74A5C"/>
-            <stop offset="100%" stop-color="#F51D2C"/>
-        </linearGradient>
-    </defs>
-    <g fill="none">
-        <path fill="url(#logosAntDesign0)" d="M116.85 4.545L4.53 116.775a15.396 15.396 0 0 0 0 21.812l112.32 112.229c6.039 6.033 15.792 6.033 21.83 0l47.095-47.056c5.408-5.404 5.408-14.165 0-19.568c-5.408-5.404-14.176-5.404-19.584 0l-35.702 35.672c-1.503 1.502-3.784 1.502-5.287 0l-89.696-89.622c-1.503-1.502-1.503-3.781 0-5.283l89.696-89.623c1.503-1.501 3.784-1.501 5.287 0l35.702 35.673c5.408 5.404 14.176 5.404 19.584 0c5.408-5.404 5.408-14.164 0-19.568l-47.09-47.05c-6.063-5.904-15.82-5.856-21.835.154Z"/>
-        <path fill="url(#logosAntDesign1)" d="M116.85 4.545L4.53 116.775a15.396 15.396 0 0 0 0 21.812l112.32 112.229c6.039 6.033 15.792 6.033 21.83 0l47.095-47.056c5.408-5.404 5.408-14.165 0-19.568c-5.408-5.404-14.176-5.404-19.584 0l-35.702 35.672c-1.503 1.502-3.784 1.502-5.287 0l-89.696-89.622c-1.503-1.502-1.503-3.781 0-5.283l89.696-89.623c3.742-3.226 9.849-9.76 18.815-11.29c6.664-1.135 13.95 1.365 21.857 7.5L138.686 4.39c-6.064-5.903-15.82-5.855-21.836.155Z"/>
-        <path fill="url(#logosAntDesign2)" d="M196.647 173.754c5.408 5.404 14.176 5.404 19.584 0l34.739-34.71a15.396 15.396 0 0 0 0-21.812l-35.041-34.89c-5.421-5.397-14.192-5.389-19.603.018c-5.408 5.404-5.408 14.164 0 19.568l23.667 23.648c1.503 1.502 1.503 3.781 0 5.283l-23.346 23.327c-5.408 5.404-5.408 14.165 0 19.568Z"/>
-        <ellipse cx="128.327" cy="128.242" fill="url(#logosAntDesign3)" rx="30.327" ry="30.302"/>
-    </g>
-</svg>
 
- 
-</div>
+    <div class="container">
 
+        <aside class="left-section">
+            <div class="logo">
+                <button class="menu-btn" id="menu-close">
+                    <i class='bx bx-log-out-circle'></i>
+                </button>
+                <img src="assets/logo.png">
+                <a href="#">AsmrProg</a>
+            </div>
 
-  </div>
-  
-  <iframe id="myIframe" src="https://github.com/mdakijislam/dex.me" frameborder="0"></iframe>
-    <script></script>             
- <script src="js/dex.js"></script>
+            <div class="sidebar">
+                <div class="item" id="active">
+                    <i class='bx bx-home-alt-2'></i>
+                    <a href="#">Overview</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-grid-alt'></i>
+                    <a href="#">Course</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-folder'></i>
+                    <a href="#">Resources</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-message-square-dots'></i>
+                    <a href="#">Message</a>
+                </div>
+                <div class="item">
+                    <i class='bx bx-cog'></i>
+                    <a href="#">Setting</a>
+                </div>
+            </div>
+
+            <div class="pic">
+                <img src="assets/pro.png">
+            </div>
+
+            <div class="upgrade">
+                <h5>Upgrade Your Plan</h5>
+                <div class="link">
+                    <a href="#">Go to <b>PRO</b></a>
+                    <i class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+        </aside>
+
+        <main>
+            <header>
+                <button class="menu-btn" id="menu-open">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <h5>Hello <b>REZA</b>, welcome back!</h5>
+            </header>
+
+            <div class="separator">
+                <div class="info">
+                    <h3>My Courses</h3>
+                    <a href="#">View All</a>
+                </div>
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div class="analytics">
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Locations</h5>
+                            <p>35 Lessons</p>
+                        </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bx-map-pin'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>People</h5>
+                            <p>30 Lessons</p>
+                        </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bx-user-voice'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Airport</h5>
+                            <p>45 Lessons</p>
+                        </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bxs-plane-land'></i>
+                </div>
+                <div class="item">
+                    <div class="progress">
+                        <div class="info">
+                            <h5>Places</h5>
+                            <p>20 Lessons</p>
+                        </div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <i class='bx bxs-castle'></i>
+                </div>
+            </div>
+
+            <div class="separator">
+                <div class="info">
+                    <h3>Planning</h3>
+                    <a href="#">View All</a>
+                </div>
+                <input type="date" value="2023-10-15">
+            </div>
+
+            <div class="planning">
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-book-alt'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Reading - Topic 1</h5>
+                            <p>8:00 - 10:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-edit-alt'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Writing - Topic 2</h5>
+                            <p>13:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-headphone'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Listening - Topic 1</h5>
+                            <p>15:00 - 16:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <div class="icon">
+                            <i class='bx bx-volume-low'></i>
+                        </div>
+                        <div class="details">
+                            <h5>Listening - Topic 2</h5>
+                            <p>19:00 - 20:00</p>
+                        </div>
+                    </div>
+                    <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+            </div>
+        </main>
+
+        <aside class="right-section">
+            <div class="top">
+                <i class='bx bx-bell'></i>
+                <div class="profile">
+                    <div class="left">
+                        <img src="assets/profile.jpg">
+                        <div class="user">
+                            <h5>Reza Mehdikhanlou</h5>
+                            <a href="#">Basic Plan</a>
+                        </div>
+                    </div>
+                    <i class='bx bxs-chevron-right'></i>
+                </div>
+            </div>
+
+            <div class="separator" id="first">
+                <h4>Statistics</h4>
+            </div>
+
+            <div class="stats">
+                <div class="item">
+                    <div class="top">
+                        <p>Courses</p>
+                        <p>Completed</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>02</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Total Points</p>
+                        <p>Gained</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>250</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Courses</p>
+                        <p>In Progress</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>03</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="top">
+                        <p>Tasks</p>
+                        <p>Finished</p>
+                    </div>
+                    <div class="bottom">
+                        <div class="line"></div>
+                        <h3>250</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separator">
+                <h4>Weekly Work</h4>
+            </div>
+
+            <div class="weekly">
+                <div class="title">
+                    <div class="line"></div>
+                    <h5>Tasks This Week</h5>
+                </div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
+</html>
