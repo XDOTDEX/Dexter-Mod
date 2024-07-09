@@ -49,8 +49,8 @@
 
 <div id="main">
     <div id="error">I will love you as long as i breathe.(<a
-            href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a
-            href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。
+            href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)or Firefox(<a
+            href="http://firefox.com.cn/download/">Firefox</a>)The latest version of your browser or other browser。
     </div>
     <div id="wrap">
         <div id="text">
@@ -74,7 +74,7 @@
     }).reduce((a, b) => {
         return a + b;
     }))
-    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1">与</span> ${config.names[1]}<span class="STYLE1">已经相恋了</span>`)
+    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1">与</span> ${config.names[1]}<span class="STYLE1">Already in love</span>`)
 </script>
 
 <script>
@@ -189,7 +189,7 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
+            // There will be flickering. Don't do this., (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
